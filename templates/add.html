@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Item</title>
+</head>
+<body>
+    <h1>{{ 'Edit' if item else 'Create' }} Item</h1>
+    <form method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ item['name'] if item else '' }}" required>
+        <br>
+        <label>Description:</label>
+        <textarea name="description">{{ item['description'] if item else '' }}</textarea>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+    <a href="/">Back to List</a>
+</body>
+</html>

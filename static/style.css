@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playwrite+IS:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+}
+
+.form__ {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;width: 250px;margin: 25px auto;
+}
+
+.logo {
+    font-family: "Cedarville Cursive", serif;font-size: 24px;
+}
+
+.sign {
+    font-family: "Playwrite IS", serif;font-size: 24px;font-weight: bold;
+    position: absolute;left: 15px;top: 0;
+}
+.form__ input {
+    padding: 12px;
+    border-radius: 15px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    outline: none;
+    height: 18px;
+
+}
+
+.form__ button {
+    border: none;
+    background-color: black;
+    border-radius: 15px;
+    padding: 0px;
+    height: 35px;width: 35px;
+}
+
+.cap {
+    width: 90%;
+    display: flex;
+}
+
+.hold {
+    display: flex;
+    width: 25%;
+    border: 2px solid grey;
+    padding: 15px;
+    border-radius: 15px;margin: 15px;
+}
+
+.hold img {
+    width: 112px;
+    height: 112px;
+    border-radius: 15px;
+}
+
+.hold span {
+    display: flex;
+    flex-direction: column;
+    margin: auto 15px;
+}
+
+.hold span img {
+    /* width: 150px; */
+    height: 45px;
+}
+
+.not_ {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    height: 75px;
+    transform: translateX(-50%);
+}
+
+.ho {
+    border-radius: 0;
+}

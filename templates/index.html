@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firebase CRUD</title>
+    <style>
+        ul {
+            display: flex;
+            flex-direction: column;
+
+        }
+        li {
+            background-color: antiquewhite;
+            width: 15em;
+            border-radius: 15px;
+            padding: 45px;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="" method="post" class="form__ ">
+        <!-- <p class="logo">si</p> -->
+        <p class="sign">Sign</p>
+        <div style="display: flex;gap: 15px;">
+            <input type="text" name="name" id="" placeholder="Search">
+            <button type="submit">
+                <img src="/static/search_02.svg" alt="">
+            </button>
+        </div>
+    </form class="cap">
+    <div style="display: ruby;position: absolute;left: 50%;transform: translateX(-50%);width:90%">
+        {{nmm}}
+        {% if ab %}
+        <div class="hold">
+            <img src="https://{{ image }}" alt="" srcset="">
+            <span>
+                <p>{{ namem }}</p>
+                <img src="https://{{ ab }}" class="ho" alt="" srcset="" style="object-fit: contain;"s>
+                
+            </span>
+        </div>
+        {%else%}
+        <p class="not_">{{ namem}} Not found</p>
+        {% endif%}
+        <!-- {% if namem %} -->
+        <!-- {% endif %} -->
+        
+        {% for x in range(na)%}
+        <div class="hold">
+            
+            <img src="https://{{ url[x] }}" alt="" srcset="">
+            <span>
+                
+                <p>{{ nam[x] }}</p>
+                <img src="https://{{ sip[x] }}" alt=""  class="ho "  srcset="" style="object-fit: contain;">
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
